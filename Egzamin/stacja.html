@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="stacja">
+     <center>
+          <h1>Całodobowa Stacja Paliw</h1>
+     </center>
+    </div>
+    <div class="menu">
+     <a href="godziny.html"><img src="home.png" alt="stacja"></a>
+     <a href="stacja.html"><img src="znak.png" ></a>
+     <a href="kwerendy.txt" style="color:olivedrab;">Pobierz dokumenty</a>
+    </div>
+     <div class="form">
+      <center>
+          <h3>Oientacyjny koszt Paliwa</h3>
+      </center>
+     <form action="" method="post">
+     Rodzaj Paliwa (1 - Benzyna, 2 - olej napędowy<br>
+     <input type="number" name="rodzaj" id="rodzaj" ><br>
+     Ile litrów <br>
+     <input type="number" name="litrów" id="litrów"><br>
+     <input type="button" value="Oblicz" id="koniec" onclick="licz()">
+     </form>
+     <p id="w"></p>
+     </div>
+     
+    <div class="prawy">
+   <center><img src="samochod1.png" alt="" id="a"></center>
+    </div>
+     <div class="dol">
+      <h2>Stronę wykonał: 0000000000</h2>
+     </div>
+     <script>
+
+function licz(){
+var a =document.getElementById("rodzaj").value;
+switch (a){
+    case '1':
+        a = 3.5
+        break;
+        case '2':
+        a = 4
+        break;
+        default:
+            a = 0
+}
+var b =document.getElementById("litrów").value;
+var c = a*b 
+console.log("Paliwo " + a, "Rodzaj Paliwa " + b ,"Cena "+c)
+var w =  "Cena paliwa to: " + c +" zł"
+document.getElementById('w').innerHTML = w
+}
+     </script>
+     
+</body>
+</html>

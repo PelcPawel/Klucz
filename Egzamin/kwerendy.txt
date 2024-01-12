@@ -1,0 +1,5 @@
+SELECT `marka`, `rocznik` FROM `samochody` WHERE `kolor` = `niebieski`
+SELECT count(1) FROM `samochody` WHERE marka in ('Toyota', 'Opel') and stan = 'bardzo dobry';
+Update samochody set stan = 'dobry' where rocznik < 2004
+CREATE USER 'jan'@'$' IDENTIFIED by `janKowalski1@`
+GRANT SELECT, INSERT, UPDATE ON  `samochody`.`samochody` TO 'Jan'@'%'; 

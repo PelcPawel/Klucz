@@ -1,0 +1,43 @@
+.form{
+    float: left;
+    background-color: snow;
+    color: OliveDrab;
+    width: 60%;
+    height: 322px;
+}
+.stacja{
+    grid-area: footer;
+    background-color:rgb(120,0,46);
+    text-align: center;
+    padding: 20px;
+    font-size: 120%;
+    color: white;
+}
+.menu{
+    background-color: rgb(173, 20, 87);
+    text-align: left;
+}
+.body{
+    color: white;
+}
+.prawy{
+    background-color: rgb(173, 20, 87);
+    width: 40%;
+    height: 322px;
+    float: right;
+}
+.prawy  img:hover {
+    border: 1px dashed yellowgreen;
+}
+.dol{
+    grid-area: footer;
+    background-color:rgb(120,0,46);
+    text-align: center;
+    padding: 20px;
+    font-size: 120%;
+    color: white;
+}
+table, td{
+    border: 1px solid olivedrab;
+    width: 30%;
+}
